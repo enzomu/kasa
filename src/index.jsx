@@ -11,6 +11,8 @@ import Error from "./pages/Error";
 import Header from "./components/Header";
 import Footer from "./components/Footer.jsx";
 
+import './styles/index.css';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,8 +27,8 @@ root.render(
         <Route path="products/:productId" element={<Singleproduct />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <Footer />
-    </Router>
+      {/*<Footer />*/}
+    </Router> 
   </React.StrictMode>
 );
 

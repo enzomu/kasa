@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Collapse.css";
+import "../styles/components/Collapse.css";
+import vector from '../assets/Vector.png'
 
 
 function Collapse({title, description}) {
@@ -8,10 +9,10 @@ function Collapse({title, description}) {
 
     return(
         <div className="collapse" id={`collapse-${title}`}>
-            <div className="header-collapse" /* onClick={() => setOpen(!open)} */>
+            <div className="header-collapse"  onClick={() => setOpen(!open)} >
                 <div className="title-collapse">{title}</div>
-                <a className={`arrow-collapse ${open}`} href={`#collapse-${title}`} onClick={() => setOpen(!open)}>
-                    <img src={arrow} alt="Open list"/>
+                <a className={`arrow-collapse ${open}`} href={`#collapse-${title}`} /*onClick={() => setOpen(!open)}*/>
+                    <img class src={vector} alt="Open list"/>
                 </a>
             </div>
             {

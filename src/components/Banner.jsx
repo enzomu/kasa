@@ -1,6 +1,7 @@
 
 import React from 'react';
-
+import HomeBanner from '../assets/HomeBanner.png';
+import AboutBanner from '../assets/AboutBanner.png';
 
 
 function Banner({origin}){ 
