@@ -24,7 +24,7 @@ li a{
     cursor: pointer;
 }
 
-li a:hover{
+nav ul .active{
     text-decoration: underline;
 }
 

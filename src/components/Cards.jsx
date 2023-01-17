@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'; 
 import logements from '../logements.json'; 
 
-function Card (){ 
+function Cards (){ 
 
     return(
         <section className='logementsGallery'>
@@ -16,4 +16,4 @@ function Card (){
     );
 }
 
-export default Card
+export default Cards
