@@ -2,8 +2,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    margin: 2% 5%;
+    max-width: 1240px;
+    margin: 40px auto;
+    padding: 0 100px;
 }
 
 nav ul{
