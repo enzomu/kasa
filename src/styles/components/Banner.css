@@ -22,6 +22,37 @@
 .banner__title{
     position: absolute;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 500;
     color: #FFF;
+    margin-left: 20px;
+}
+
+@media all and (max-width:768px){
+    
+    .banner{
+        margin-top: 0;
+        border-radius: 10px;
+        height: 111px;
+        justify-content: flex-start;
+    }
+    .banner__title{
+        font-size: 24px;
+        min-width: 220px;
+        width: 217px;
+    }
+
+    .banner__img{
+        min-width: 220px;
+        width: 100%;
+    }
+    .banner.about-page{
+        height: 223px;
+        background-image: url('../../assets/AboutBannerMobile.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .banner.about-page img{
+        opacity: 0;
+    }
+
 }

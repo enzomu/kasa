@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+
+
 body {
   margin: auto;
   max-width: 1440px;
@@ -11,7 +15,9 @@ body {
 @import './components/Cards.css';
 @import './components/Header.css';
 @import './components/Footer.css';
+@import './components/SlidePictures.css';
 
 @import './pages/About.css';
 @import './pages/Home.css';
 @import './pages/Error.css';
+@import './pages/SingleProduct.css';

@@ -14,9 +14,24 @@
     align-items: center;
     width: 80%;
     margin: auto;
-    row-gap: 1rem;
+    row-gap: 20px
 }
 
 .about__item{
     width: 100%;
+}
+
+.about__item-text{
+    padding-left: 10px;
+    margin: 0;
+}
+
+@media all and (max-width:768px){
+    
+    .about{
+        width: 100%;
+    }
+    .about__container{
+        width: 100%;
+    }
 }

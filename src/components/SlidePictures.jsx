@@ -8,7 +8,7 @@ import arrowRight from '../assets/arrow-right.png'
 export default function SlidePictures() {
     
     const { id } = useParams()
-    const { pictures } = logements.find((ad) => ad.id === id)
+    const { pictures } = logements.find((logement) => logement.id === id)
     const [current, setCurrent] = useState(0)
     const slideToRight = () => {
         setCurrent(current === pictures.length - 1 ? 0 : current + 1)
@@ -17,7 +17,7 @@ export default function SlidePictures() {
         setCurrent(current === 0 ? pictures.length - 1 : current - 1)
     }
     return (
-        <section className="carrousel">
+        <section className="SlidePictures">
             {pictures.length > 1 && (
                 <img
                     className="arrowLeft"
@@ -39,13 +39,13 @@ export default function SlidePictures() {
                     <div key={index}>
                         {index === current && (
                             <img
-                                className="carrousel__img"
+                                className="Slide__img"
                                 src={picture}
                                 alt={pictures.description}
                             />
                         )}
                         {index === current && (
-                            <span className="carrousel__img-count">
+                            <span className="Slide__img-count">
                                 {current + 1}/{pictures.length}
                             </span>
                         )}

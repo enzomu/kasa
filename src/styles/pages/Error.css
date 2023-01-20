@@ -16,7 +16,6 @@
     margin-bottom: 150px;
 }
 .error-link{
-    /*text-decoration: underline; */
     cursor: pointer;
     color: #FF6060;
     text-decoration: none;
@@ -27,3 +26,22 @@
 .error-link:hover{
     text-decoration: underline;
 }
+
+@media all and (max-width:768px){
+
+    .error__text {
+        width: 80%;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .error__number{
+        font-size: 96px;
+    }
+
+    .error__link{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
+
