@@ -9,7 +9,7 @@ const Singleproduct = () => {
     const { id } = useParams()
     const logement = logements.find((logement) => logement.id === id)
     if (!logement) {
-        Navigate('*')
+        return <Navigate to="*" />
     }
     const { title, location, tags, host, rating, description, equipments } =
         logement || {}

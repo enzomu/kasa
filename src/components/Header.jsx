@@ -1,12 +1,16 @@
-import React from "react"; 
-import Logo from "../assets/LogoKasa.png"; 
-import {NavLink} from "react-router-dom"; 
+import React from 'react'
+import Logo from '../assets/LogoKasa.png'
+import { NavLink } from 'react-router-dom'
 
-const Header = () => { 
-    return(
+const Header = () => {
+    return (
         <header>
             <nav>
-                <img className="header__logo" src={Logo} alt="Kasa Logo header"></img>
+                <img
+                    className="header__logo"
+                    src={Logo}
+                    alt="Kasa Logo header"
+                ></img>
                 <ul>
                     <li>
                         <NavLink to="/" className="header__menu">
@@ -21,7 +25,7 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
-    );
+    )
 }
 
-export default Header;
+export default Header

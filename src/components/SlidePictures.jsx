@@ -6,7 +6,6 @@ import arrowLeft from '../assets/arrow-left.png'
 import arrowRight from '../assets/arrow-right.png'
 
 export default function SlidePictures() {
-    
     const { id } = useParams()
     const { pictures } = logements.find((logement) => logement.id === id)
     const [current, setCurrent] = useState(0)
