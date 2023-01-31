@@ -43,7 +43,7 @@ export default function SlidePictures() {
                                 alt={pictures.description}
                             />
                         )}
-                        {index === current && (
+                        {index === current && pictures.length > 1 && (
                             <span className="Slide__img-count">
                                 {current + 1}/{pictures.length}
                             </span>
